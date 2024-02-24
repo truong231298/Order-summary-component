@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family: "Red Hat Display", sans-serif;
+}
+
+/* background image for devices with 480px or below */
+@media only screen
+  and (max-width: 480px) {
+    body {
+      background-image: url("../public/images/pattern-background-mobile.svg"); 
+    }
+}
+
+/* background image for devices with 481px or above */
+@media only screen
+  and (min-width: 481px) {
+    body {
+      background-image: url("../public/images/pattern-background-desktop.svg");
+      
+    }
+}
